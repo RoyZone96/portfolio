@@ -1,100 +1,97 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Open Sans",
-  sans-serif; 
-  font-size: 20px;
-  color: #444;
-  text-align: center;
-  line-height: 1.5;
-}
-
-
-nav,
-footer {
-  padding: 1% 0;
-  background-color: #aaa;
-}
-
-nav{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-}
-
-
-p{
-  float: left;
-}
-
-ul.link-list{
-  list-style: none;
-  font-size: 11px;
-  float: right;
-  cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 0;
-  margin: 29px
-}
-
-header {
-  padding:  0;
+*{
+    box-sizing: border-box 
+   }
    
-}
-
-.hero{
-  width: 900px
-}
-
-section {
-  min-height: 200px;
-  padding: 6% 0;
-  background-color: #bbb;
-}
-
-section:nth-child(even) {
-  background-color: #ddd;
-}
-
-.profile{
-  display: inline-flex
-}
-
-
-.paragraph{
-  display: block;
-  float: left
-}
-
-.projects{
-  display: -webkit-inline-flex
-}
-
-.project-description{
-  font-size: 9pt;
-}
-
-.screenshot{
-  float: left
-}
-
-.summary{
-  float: right;
-  display: block
-}
-
-.content-info{
-  display: -webkit-flex;
-}
-
-ul.socials{
-  display: flex;
-  flex-direction: row;
-  justify-content:  space-evenly;
-}
+   /* html{
+     /* background: rgba(0, 0, 0, 0) url("images/background.jpg") no-repeat center center fixed;
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+         background-size: cover; */
+   
+   
+   main{
+     background-color: gray;
+     padding: 40%;
+     display: inline-block;
+   
+     
+   }
+   
+   div {
+     width: 35px;
+     height: 5px;
+     background-color: black;
+     margin: 6px 0;
+     cursor: pointer
+   }
+   
+   .screen{
+     display: none
+   }
+   
+   .link-list{
+     list-style: none;
+     display: none;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     background-color: grey;
+     width: 25%
+   }
+   
+   footer h2{
+     margin-left: auto;
+     margin-right: auto
+   }
+   
+   header{
+     float: right
+   }
+   
+   footer{
+     display: inline-block;
+     background-color: gainsboro;
+     width: 100%;
+     position: relative;
+     bottom: 0;
+     right: 0
+   }
+   
+   ul.socials{
+     display: flex;
+     flex-direction: row;
+     justify-content:  space-evenly;
+   }
+   
+   /* ul a{
+     color: green;
+     background-color: black;
+   } */
+   
+   /* @media only screen and (min-width: 600px) {
+   
+   } */
+   
+   
+   @media only screen and (min-width: 768px){
+   div{
+     display: none
+   }
+   
+   .phone{
+     display: none
+   }
+   
+   .screen{
+     display: inline-flex;
+      background-color: gainsboro;
+      width: 100%;
+   }
+   
+   .link-list{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     cursor: pointer;
+     border-right: solid black;
+     background-color: gainsboro
+   }
