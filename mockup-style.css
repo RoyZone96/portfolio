@@ -72,6 +72,7 @@
    color: navy
  }
  
+
 .skills-list img{
   width: 10%;
   height: 10%;
@@ -82,6 +83,11 @@
    color: goldenrod;
  }
  
+.projects img{
+  float: left;
+  padding-left: 80px;
+}
+
  .contact-form{
    background-color: gainsboro;
    color: cornflowerblue
@@ -102,7 +108,6 @@
    display: flex;
    flex-direction: row;
    justify-content:  space-evenly;
-   
  }
  
  section{
