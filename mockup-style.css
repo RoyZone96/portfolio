@@ -72,6 +72,11 @@
    color: navy
  }
  
+.skills-list img{
+  width: 10%;
+  height: 10%;
+}
+
  .projects{
    background-color: gray;
    color: goldenrod;
