@@ -91,7 +91,7 @@ h2{
 
 .projects img{
   float: left;
-  padding-left: 80px;
+  
 }
 
 .skills-used li{
@@ -106,9 +106,14 @@ h2{
  .contact-form{
    background-color: gainsboro;
    color: cornflowerblue;
-   display: inline-block;
  }
  
+ fieldset{
+   display: inline-block;
+   margin-inline-start: 2px;
+    margin-inline-end: 2px;
+ }
+
  footer{
    display: inline-block;
    background-color: black;
