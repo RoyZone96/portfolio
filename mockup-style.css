@@ -18,10 +18,10 @@
  
  header{
    background: rgba(0, 0, 0, 0) url("images/landscape.jpg") no-repeat bottom center;
- background-size: cover;
- width: 100%;
- height: 500px;
- position: relative;
+    background-size: cover;
+    width: 100%;
+   height: 500px;
+  position: relative;
  }
  
  header h1{
@@ -78,19 +78,35 @@
   height: 10%;
 }
 
+
  .projects{
    background-color: gray;
    color: goldenrod;
+   font-size: 16px;
  }
  
+h2{
+  margin-bottom: 100px
+}
+
 .projects img{
   float: left;
   padding-left: 80px;
 }
 
+.skills-used li{
+  display: inline-block;
+   width: auto;
+   padding: 5px 10px;
+   margin: 25px;
+   list-style: none;
+   border: solid navy;
+}
+
  .contact-form{
    background-color: gainsboro;
-   color: cornflowerblue
+   color: cornflowerblue;
+   display: inline-block;
  }
  
  footer{
