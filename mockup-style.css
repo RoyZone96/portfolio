@@ -106,13 +106,19 @@ h2{
  .contact-form{
    background-color: gainsboro;
    color: cornflowerblue;
+   
  }
  
- fieldset{
+ .container{
    display: inline-block;
    margin-inline-start: 2px;
     margin-inline-end: 2px;
+    min-width: 400px;
  }
+ 
+input{
+  width: 600px;
+}
 
  footer{
    display: inline-block;
