@@ -5,6 +5,10 @@
   border: 0;
   font-size: 100%;
  }
+
+ html{
+   scroll-behavior: smooth;
+ }
  
  body{
    font-family: 'Courier New', Courier, monospace;
@@ -14,6 +18,8 @@
    width: 100%;
    display: block;
    background-color: goldenrod ;
+   position: fixed;
+   z-index: 1;
  }
  
  header{
@@ -105,6 +111,10 @@ h2{
 .projects img{
   float: left;
   
+}
+
+.return-home{
+  float: left;
 }
 
 .skills-used li{
