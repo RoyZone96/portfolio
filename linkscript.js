@@ -1,27 +1,32 @@
 //nav links
 
 //Home 
-$('.home').on('click', 'button', function (event) {
-    event.preventDefault();
+$('#home').on('click',  function (event) {
     $('html, body').animate({
         scrollTop: 0
     })
-});
-//About me
-$('.about').on('click', 'button', function (event) {
-    event.preventDefault();
-    $('').animate
-});
-//Skills
-$('.skills').on('click', 'button', function (event) {
-    event.preventDefault();
+}) 
 
-});
+//About me
+$('#about').on('click', function (event) {
+    $('html, body').animate({
+        scrollTop: $(section.profile).offset().top
+    })
+})
+
+//Skills
+$('#skills').on('click', function (event) {
+  
+
+})
+
 //Projects
-$('.projects').on('click', 'button', function (event) {
-    event.preventDefault();
-});
+$('#projects').on('click', function (event) {
+    
+})
+
 //Contacts
-$('.contact').on('click', 'button', function (event) {
-    event.preventDefault();
-});
+$('#contact').on('click',  function (event) {
+   
+})
+
