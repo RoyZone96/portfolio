@@ -102,44 +102,51 @@
 
 
 .skills-list img{
-  width: 30%;
-  height: 30%;
+  width: 20%;
+  height: 10%;
 }
 
-
- .projects{
+.projects{
    background-color: gray;
    color: gold;
    font-size: 16px;
  }
  
-h2{
-  margin-bottom: 100px;
+.projects h2{
+  padding-bottom: 150px;
   text-align: left;
 }
 
-.projects img{
+.preview-box img{
   float: left;
-  
+  size: 50%;
+  padding-right: 30px;
+  padding-bottom: 110px;
 }
 
-.return-home{
-  float: left;
+.project-info{
+  width: 65%;
 }
 
 .skills-used li{
   display: inline-block;
    width: auto;
    padding: 5px 10px;
-   margin: 25px;
+   margin: 10px;
    list-style: none;
    border: solid navy;
 }
 
- .contact-form{
+.project-info a{
+  color: orange;
+  text-decoration: none;
+  background-color: navy;
+  border: 20px
+}
+
+.contact-form{
    background-color: gainsboro;
-   color: navy;
-   
+   color: navy; 
  }
  
  .container{
@@ -157,7 +164,7 @@ h2{
   display: inline-block;
   width: auto;
   padding: 10px 35px;
-  font-size: 70px;
+  font-size: 65px;
   color: navy;
 }
 
@@ -168,8 +175,6 @@ h2{
 .link-list li a:visited{
  color: navy;
 }
-
-
  
  ul.socials{
    display: flex;
@@ -183,7 +188,7 @@ h2{
    min-height: 500px;
    width: 100%;
    padding: 6% 0;
-   border-spacing: 20px
+   border-spacing: 20px;
  }
  
 
