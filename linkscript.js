@@ -1,3 +1,14 @@
+//
+$('.logo').on('click', function (event){
+    if($('.screen').is(":hidden")){
+        $('.screen').show()
+    }
+    else{
+        $('.screen').hide()
+    }
+})
+
+
 //nav links
 
 //Home 

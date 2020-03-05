@@ -14,14 +14,40 @@
    font-family: 'Courier New', Courier, monospace;
  }
  
- nav{
+ .navbar{
    width: 100%;
-   display: block;
-   background-color: goldenrod ;
+   height: 90px;
+   display: inline-block;
+   background-color: goldenrod;
    position: fixed;
    z-index: 1;
  }
+
+ .screen{
+  display: none;
+  float: right;
+  list-style: none;
+  margin-top: 20px;
+}
  
+ .screen li{
+  display: inline-block;
+  width: auto;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: navy;
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+.screen li:last-child{
+ margin-right: 45px;
+}
+
+.screen li a:visited{
+ color: navy;
+}
+
  header{
    background: rgba(0, 0, 0, 0) url("images/landscape.jpg") no-repeat bottom center;
     background-size: cover;
@@ -48,7 +74,7 @@
    display: inline-block;
    width: 80px;
    margin: 6px 0;
-   cursor: pointer;
+   align-items: center;
  }
 
  .logo img{
@@ -61,27 +87,12 @@
    margin-right: auto;
  }
  
- .screen{
-   display: inline-block;
-   float: right;
-   list-style: none;
-   margin-top: 20px;
- }
-
- .screen li{
-   display: inline-block;
-   width: auto;
-   padding: 5px 10px;
-   cursor: pointer;
-   color: navy;
-   font-size: 22px;
-   font-weight: bolder;
- }
+ 
  
  
  .profile{
    background-color: gainsboro;
-   color: navy
+   color: brown
  }
  
 .photograph{
@@ -92,14 +103,14 @@
 
 
 .skills-list img{
-  width: 10%;
-  height: 10%;
+  width: 30%;
+  height: 30%;
 }
 
 
  .projects{
    background-color: gray;
-   color: goldenrod;
+   color: gold;
    font-size: 16px;
  }
  
@@ -113,10 +124,6 @@ h2{
   
 }
 
-.return-home{
-  float: left;
-}
-
 .skills-used li{
   display: inline-block;
    width: auto;
@@ -128,7 +135,7 @@ h2{
 
  .contact-form{
    background-color: gainsboro;
-   color: cornflowerblue;
+   color: navy;
    
  }
  
@@ -147,7 +154,7 @@ h2{
   display: inline-block;
   width: auto;
   padding: 10px 35px;
-  font-size: 100px;
+  font-size: 55px;
   color: navy;
 }
 
@@ -159,15 +166,7 @@ h2{
  color: navy;
 }
 
- footer{
-   display: inline-block;
-   background-color: black;
-   color: yellow;
-   width: 100%;
-   position: relative;
-   bottom: 0;
-   right: 0;
-   text-align: center
+ 
  }
  
  ul.socials{
@@ -186,34 +185,56 @@ h2{
  }
  
 
- 
- 
- 
- /* @media only screen and (min-width: 768px){
- div{
-   display: none
+ footer{
+   display: inline-block;
+   background-color: black;
+   color: yellow;
+   width: 100%;
+   position: relative;
+   bottom: 0;
+   right: 0;
+   text-align: center
  }
  
- .phone{
-   display: none
+ @media only screen and (min-width: 768px){
+  .logo {
+    display: inline-block;
+    width: 80px;
+    margin: 6px 0;
+    align-items: right;
+  }
+  
+  .screen{
+    display: inline-block;
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+  }
+   
+   .screen li{
+    display: inline-block;
+    width: auto;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: navy;
+    font-size: 22px;
+    font-weight: bolder;
+  }
+  
+  .screen li:last-child{
+   margin-right: 45px;
+  }
+  
+  .screen li a:visited{
+   color: navy;
+  }
+  
+
+  .link-list li{
+    display: inline-block;
+    width: auto;
+    padding: 10px 35px;
+    font-size: 100px;
+    color: navy;
+  }  
  }
- 
- .screen{
-   display: inline-flex;
-    background-color: green;
-    width: 100%;
-   font-size: 14px;
-   list-style: none
- }
- 
- .link-list{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
-   cursor: pointer;
-   border-right: solid black;
-   background-color: green
- }
- 
- 
- } */
