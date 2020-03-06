@@ -120,7 +120,7 @@
 
 .preview-box img{
   float: left;
-  size: 50%;
+  width: 100%;
   padding-right: 30px;
   border-bottom: 110px;
 }
