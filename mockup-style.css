@@ -110,10 +110,11 @@
    background-color: gray;
    color: gold;
    font-size: 16px;
+   margin: 0 auto
  }
  
 .projects h2{
-  padding-bottom: 150px;
+  border-bottom: 10px;
   text-align: left;
 }
 
@@ -121,7 +122,7 @@
   float: left;
   size: 50%;
   padding-right: 30px;
-  padding-bottom: 110px;
+  border-bottom: 110px;
 }
 
 .project-info{
