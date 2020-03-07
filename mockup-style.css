@@ -26,14 +26,13 @@
  
  
 
- .screen{
+ .navlist{
     display:  none;
     list-style: none;
     margin-top: 20px;
   }
  
- .screen li{
-  display: none;
+ .navlist li{
   width: auto;
   padding: 5px 10px;
   cursor: pointer;
@@ -42,11 +41,8 @@
   font-weight: bolder;
 }
 
-.screen li:last-child{
- margin-right: 45px;
-}
 
-.screen li a:visited{
+.navlist li a:visited{
  color: navy;
 }
 
@@ -122,6 +118,7 @@
 
 .preview-box img{
   float: right;
+  max-width: 100%;
   width: 50%;
   padding-left: 30px;
   border-bottom: 110px;
@@ -167,12 +164,13 @@
   display: inline-block;
   width: auto;
   padding: 10px 35px;
-  font-size: 65px;
+  font-size: 12pt;
   color: navy;
 }
 
 .link-list li a{
   text-decoration: none;
+  font-size: 45px;
 }
 
 .link-list li a:visited{
@@ -224,13 +222,13 @@
    display: inline-block;
   }
   
-  .screen{
+  .navlist{
     display: inline-block;
     list-style: none;
     margin-top: 20px;
   }
    
-   .screen li{
+   .navlist li{
     display: inline-block;
     width: auto;
     padding: 5px 10px;
@@ -240,11 +238,11 @@
     font-weight: bolder;
   }
   
-  .screen li:last-child{
+  .navlist li:last-child{
    margin-right: 45px;
   }
   
-  .screen li a:visited{
+  .navlist li a:visited{
    color: navy;
   }
 
@@ -260,7 +258,7 @@
     display: inline-block;
     width: auto;
     padding: 10px 35px;
-    font-size: 75px;
+    font-size: 100px;
     color: navy;
   }  
  }
