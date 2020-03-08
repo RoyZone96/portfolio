@@ -111,8 +111,8 @@
    margin: 0 auto
  }
  
-.projects h2{
-  border-bottom: 10px;
+.wrapper h2{
+  padding-bottom: 80px;
   text-align: left;
 }
 
