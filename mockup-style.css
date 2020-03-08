@@ -85,9 +85,6 @@
    margin-right: auto;
  }
  
- 
- 
- 
  .profile{
    background-color: gainsboro;
    color: brown
@@ -97,7 +94,6 @@
   float: right;
   margin-left: 40px;
 }
-
 
 .skills-list img{
   width: 20%;
@@ -119,7 +115,6 @@
 .preview-box img{
   float: right;
   max-width: 100%;
-  width: 50%;
   padding-left: 30px;
   border-bottom: 110px;
 }
@@ -224,6 +219,7 @@
   
   .navlist{
     display: inline-block;
+    float: right;
     list-style: none;
     margin-top: 20px;
   }
@@ -250,7 +246,7 @@
     float: right;
     width: 500px;
     padding-left: 30px;
-    border-bottom: 110px;
+    padding-bottom: 90px;
   }
   
 
