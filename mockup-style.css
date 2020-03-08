@@ -114,9 +114,9 @@
 
 .preview-box img{
   float: right;
-  max-width: 100%;
+  width: 300px;
   padding-left: 30px;
-  border-bottom: 110px;
+  padding-bottom: 110px;
 }
 
 .project-info{
