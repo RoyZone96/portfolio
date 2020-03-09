@@ -64,7 +64,7 @@
  }
  
  main{
-   display: inline-block;
+   display: block;
    text-align: center;
  }
  
@@ -113,13 +113,14 @@
 }
 
 .preview-box img{
-  width: 200px;
-  padding-left: 30px;
+  width: 70%;
   padding-bottom: 110px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-info{
-  width: 65%;
+  width: 100%;
 }
 
 .skills-used li{
@@ -181,7 +182,7 @@
    background-color: ghostwhite;
    display: block;
    min-height: 500px;
-   width: 1000px;
+   width: 100%;
    padding: 6px 0;
    border-spacing: 20px;
  }
