@@ -143,7 +143,7 @@
    color: navy; 
  }
  
- .container{
+.container{
    display: inline-block;
    margin-inline-start: 2px;
     margin-inline-end: 2px;
@@ -181,7 +181,7 @@
    background-color: ghostwhite;
    display: block;
    min-height: 500px;
-   width: 100%;
+   width: 100px;
    padding: 6% 0;
    border-spacing: 20px;
  }
@@ -207,6 +207,16 @@
     margin: 6px 0;
     align-items: right;
   }
+
+  section{
+    background-color: ghostwhite;
+    display: block;
+    min-height: 500px;
+    width: 100%;
+    padding: 6% 0;
+    border-spacing: 20px;
+  }
+  
 
   .nav{
    width: 100%;
