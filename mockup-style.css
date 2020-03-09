@@ -181,7 +181,7 @@
    background-color: ghostwhite;
    display: block;
    min-height: 500px;
-   width: 100px;
+   width: 1000px;
    padding: 6% 0;
    border-spacing: 20px;
  }
@@ -228,7 +228,6 @@
   
   .navlist{
     display: inline-block;
-    float: right;
     list-style: none;
     margin-top: 20px;
   }
