@@ -57,9 +57,9 @@
  header h1{
    position: absolute;
    bottom: 1%;
-   right: 1%;
-   color: yellow;
-   text-align: right;
+   left: 1%;
+   color: white;
+   text-align: left;
    font-size: 15px;
  }
  
