@@ -58,6 +58,7 @@
    bottom: 1%;
    left: 1%;
    color: white;
+   background-color: black;
    text-align: left;
    font-size: 15px;
  }
@@ -139,7 +140,7 @@
   text-decoration: none;
   background-color: navy;
   border: 20px;
-  padding: 10px 20px
+  padding: 5px 10px
 }
 
 .contact-form{
@@ -235,6 +236,7 @@
   
   .navlist{
     display: inline-block;
+    float: right;
     list-style: none;
     margin-top: 20px;
   }
