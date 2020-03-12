@@ -1,10 +1,10 @@
 // click on logo to make menu appear
 $('#menu-bar').on('click', function (event){
-    if($('.navlist').is(":hidden")){
-        $('.navlist').show()
+    if($('.screen').is(":hidden")){
+        $('.screen').show()
     }
     else{
-        $('.navlist').hide()
+        $('.screen').hide()
     }
 })
 
