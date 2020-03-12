@@ -1,5 +1,5 @@
 // click on logo to make menu appear
-$('#menu-bar').on('click', function (event){
+$('.menu-bar').on('click', function (event){
     if($('.screen').is(":hidden")){
         $('.screen').show()
     }
