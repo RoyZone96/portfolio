@@ -151,6 +151,7 @@
 .project-info a{
   color: orange;
   text-decoration: none;
+  display: inline-block;
   background-color: navy;
   border: 20px;
   padding: 5px 10px
