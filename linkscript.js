@@ -1,12 +1,7 @@
 // click on logo to make menu appear
-$('.menu-bar').on('click', function (event){
-    if($('.screen').is(":hidden")){
-        $('.screen').show()
-    }
-    else{
-        $('.screen').hide()
-    }
-})
+$('#icon').on('click', function (event){
+    $('.screen').toggle()
+  })
 
 
 //nav links
