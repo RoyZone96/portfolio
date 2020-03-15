@@ -1,5 +1,5 @@
 // click on logo to make menu appear
-$('.i').on('click', function (event){
+$('.menu-bar').on('click', function (event){
     $('.screen').toggle()
   })
 

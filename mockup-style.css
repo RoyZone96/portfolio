@@ -30,8 +30,10 @@
    display: inline-block
  } 
 
- i{
-  font-size: 25pt;
+ .menu-bar{
+  /* font-size: 25pt; */
+  width: 35px;
+  height: 15px;
   margin: 6px 0;
   cursor: pointer;
  }
@@ -219,7 +221,7 @@
 
    @media only screen and (min-width: 768px){
   
-  .i{
+  .menu-bar{
       display: none;
   }
   
