@@ -30,10 +30,8 @@
    display: inline-block
  } 
 
- .menu-bar{
-  width: 35px;
-  height: 5px;
-  background-color: black;
+ i{
+  font-size: 25pt;
   margin: 6px 0;
   cursor: pointer;
  }
@@ -221,7 +219,7 @@
 
    @media only screen and (min-width: 768px){
   
-  #icon{
+  .i{
       display: none;
   }
   
