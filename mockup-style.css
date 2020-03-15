@@ -34,6 +34,7 @@
   /* font-size: 25pt; */
   width: 35px;
   height: 15px;
+  border: solid black;
   margin: 6px 0;
   cursor: pointer;
  }
