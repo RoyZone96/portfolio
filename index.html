@@ -10,59 +10,86 @@
 </head>
 
 <body>
+
   <nav class="navbar">
-    <div class="logo"><img src="images/jamrock-studio.png" alt="Personal logo"></div>
-      <div class="menu-bar"></div>
-      <div class="menu-bar"></div>
-      <div class="menu-bar"></div>
+    <div class="logo">
+      <img src="images/jamrock-studio.png" alt="Personal logo">
+    </div>
+    
 
     <div class="screen">
       <ul class="navlist">
-        <li id="home"><a>Home</a></li>
-        <li id="about"><a>About</a></li>
-        <li id="skills"><a>Skills</a></li>
-        <li id="projects"><a>Projects</a></li>
-        <li id="contact"><a>Contact</a></li>
+        <li id="home">
+          <i class="fa fa-home">
+            <a class="full">Home</a>
+          </i>
+        </li>
+        <li id="about">
+          <i class="fa fa-id-badge link">
+            <a class="full">About</a>
+          </i>
+        </li>
+        <li id="skills">
+          <i class="fa fa-cogs">
+            <a class="full">Skills</a>
+          </i>
+        </li>
+        <li id="projects">
+          <i class="fa fa-briefcase link">
+            <a class="full">Projects</a>
+          </i>
+        </li>
+        <li id="contact">
+          <i class="fa fa-mobile">
+            <a class="full">Contact</a>
+          </i>
+        </li>
       </ul>
     </div>
   </nav>
+
   <header>
-    <h1>Advancing to new horizons</h1>
+    <h1 class="slogan">Advancing to new horizons</h1>
   </header>
+
   <main class="staging-area">
     <section class="profile">
       <div class="wrapper">
         <h2><img class="photograph" src="images/profile-pic.jpg" alt="Profile pic">Welcome!</h2>
-        <p>I am a full stack web developer and artist who excels at creating logos and labels designed for music. I
-          enjoy
-          coding because it's like a puzzle game. When presented with a particularly challenging code, I can sit at a
-          computer for hours until I solve the puzzle. However, a game is seldom fun without others to enjoy them with,
-          so I want to be a part of a supportive team to share the joy of solving a particularly challenging code and
-          advance
-          to the next level of coding.
+        <p>I am a full stack web developer and artist who excels at creating logos and labels designed for music. 
           <br>
-          When not coding I enjoy swimming, fishing, traveling and gaming. Even with all I have learned so far I still
-          consider myself inexperienced and am open to learning more and improving my skills.
+          <br>
+          I enjoy coding because it's like a puzzle game. When presented with a particularly challenging code, I can sit at a
+          computer for hours until I solve the puzzle, especially when working with others.
+          <br>
+          <br>
+          When not coding I enjoy gaming and the more challenging the game the better. Even with all I have learned so far I still
+          seek to advance to the next level.
         </p>
       </div>
     </section>
 
     <section class="skills">
+      <h2>Skills</h2>
       <div class="wrapper">
-        <h2>Skills</h2>
         <div class="skills-list">
           <img src="images/html-logo.png" alt="Html logo">
           <img src="images/css-logo.png" alt="CSS logo">
           <img src="images/javascript-logo.png" alt="JS logo">
           <img src="images/jquery-logo.png" alt="JQuery logo">
+          <img src="images/react.png" alt="React logo">
+          <img src="images/heroku.png" alt="heroku log">
+          <img src="images/postgresql-logo.png" alt="Postgres Logo">
+          <img src="images/nodejslogo.png" alt="Node Logo">
         </div>
       </div>
     </section>
 
-    <section class="projects">
+    <section class="projects"> 
+      <h2>Projects</h2>
       <div class="wrapper">
-        <h2>Projects</h2>
-        <div class="preview-box">
+        <ul class="project-list">
+        <li class="preview-box">
           <img src="images/app-screenshot.png" alt="preview of project">
           <div class="project-info">
             <h3>World War Quiz Command</h3>
@@ -80,9 +107,9 @@
               <a href="https://royzone96.github.io/ww-2-quiz-command/" target="_blank">DEMO</a>
             </div>
           </div>
-        </div>
-        <div class="preview-box">
-          <img src="images/index-screenshot.png.png" alt="preview of project">
+        </li>
+        <li class="preview-box">
+          <img src="images/index-screenshot.png" alt="preview of project">
           <div class="project-info">
             <h3>DnD Living Library</h3>
             <ul class="skills-used">
@@ -92,14 +119,16 @@
               <li>jQuery</li>
             </ul>
             <p>
-              </p>
+              A whole library's worth of tabletop knowledge in the palm of your hand and counting.
+            </p>
             <div class="button wrapper">
               <a href="https://github.com/RoyZone96/dnd-library" target="_blank">CODE</a>
               <a href="https://royzone96.github.io/dnd-library/" target="_blank">DEMO</a>
             </div>
           </div>
-        </div>
+        </li>
       </div>
+
     </section>
 
     <section class="contact-form">
