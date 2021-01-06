@@ -14,11 +14,18 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
+.show-print-only {
+  display: none !important;
+}
+
 .logo {
   display: inline-block;
-  width: 80px;
+  width: 40px;
   margin: 6px 0;
-  align-items: left;
+}
+
+.name{
+  float: left;
 }
 
 ul{
@@ -80,8 +87,17 @@ header {
 
 header h1 {
   position: absolute;
-  bottom: 1%;
+  top: 25%;
   left: 1%;
+  color: white;
+  text-align: left;
+  font-size: 15px;
+}
+
+header h2 {
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
   color: white;
   text-align: left;
   font-size: 15px;
@@ -89,7 +105,7 @@ header h1 {
 
 .slogan {
   font-size: 18pt;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Brush Script MT', cursive;
 }
 
 main {
@@ -98,11 +114,14 @@ main {
 }
 
 .logo {
-  display: inline-block;
-  width: 80px;
+  display: inline;
+  width: 90px;
   margin: 6px 0;
-  cursor: pointer;
   float: right;
+}
+
+.logo h1{
+  font-family: cursive;
 }
 
 .logo img {
@@ -115,11 +134,16 @@ main {
   margin-right: auto;
   padding-top: 30px;
   padding-bottom: 30px;
+  
 }
 
 .profile {
   background-color: gainsboro;
   color: brown
+}
+
+#introduction{
+  text-align: left;
 }
 
 .photograph {
@@ -146,7 +170,10 @@ main {
 }
 
 .preview-box{
+  padding-top: 50px;
   padding-bottom: 50px;
+  border: 1pt solid;
+  margin-bottom: 25px
 }
 
 .preview-box img {
@@ -263,7 +290,7 @@ footer {
   }
 
   .slogan {
-    font-size: 24pt;
+    font-size: 39pt;
   }
 
   .nav {

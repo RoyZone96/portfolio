@@ -2,44 +2,82 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Briceson Roy Portfolio</title>
-  <link href="mockup-style.css" rel="stylesheet" type="text/css" />
+  <title>Briceson Roy - Full Stack Developer - Portfolio</title>
+
+
+  <meta name="title" content="Briceson Roy - Full Stack Developer - Portfolio">
+  <meta name="description"
+    content="I am a full stack web developer and artist who excels at creating logos and labels designed for music.">
+  <meta name="keywords"
+    content="fullstack developer, full-stack developer, full stack developer, HTML, HTML5, CSS, CSS3, JavaScript, jQuery, Node.js, Express, Postman, Postgres, Knex, Mocha, Chai, Heroku, GitHub, Dbeaver, React">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta charset="UTF-8">
+  <meta name="revisit-after" content="3 days">
+  <meta name="author" content="Briceson Roy">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="mockup-style.css" rel="stylesheet" type="text/css" />
+  <link href="print.css" rel="stylesheet" media="print">
 </head>
 
 <body>
 
   <nav class="navbar">
+    <div id="name">
+
+    </div>
     <div class="logo">
       <img src="images/jamrock-studio.png" alt="Personal logo">
     </div>
-    
+
 
     <div class="screen">
       <ul class="navlist">
-        <li id="home">
+        <li class="show-web-only" id="home">
           <i class="fa fa-home">
             <a class="full">Home</a>
           </i>
         </li>
-        <li id="about">
+        <li class="show-web-only" id="about">
           <i class="fa fa-id-badge link">
             <a class="full">About</a>
           </i>
         </li>
-        <li id="skills">
+        <li class="show-web-only" id="skills">
           <i class="fa fa-cogs">
             <a class="full">Skills</a>
           </i>
         </li>
-        <li id="projects">
+        <li class="show-web-only" id="projects">
           <i class="fa fa-briefcase link">
             <a class="full">Projects</a>
           </i>
         </li>
-        <li id="contact">
+        <li class="show-print-only">
+          <a href="https://evanpoe.github.io/portfolio/">Portfolio Page: evanpoe.github.io/portfolio/
+          </a>
+        </li>
+        <li class="show-print-only">
+          <a href="mailto:evanpoe91@yahoo.com?subject=Responding%20to%20Your%20Portfolio!">
+            <i class="fas fa-envelope"></i> EvanPoe91@yahoo.com
+          </a>
+        </li>
+        <li class="show-print-only">
+          <a href="https://github.com/EvanPoe">
+            <i class="fab fa-github"></i> GitHub.com/EvanPoe
+          </a>
+        </li>
+        <li class="show-print-only">
+          <a href="www.linkedin.com/in/evan-poe-full-stack-developer">
+            <i class="fab fa-linkedin"></i> www.linkedin.com/in/evan-poe-full-stack-developer
+          </a>
+        </li>
+        <li class="show-web-only" id="contact">
           <i class="fa fa-mobile">
             <a class="full">Contact</a>
           </i>
@@ -48,22 +86,26 @@
     </div>
   </nav>
 
-  <header>
-    <h1 class="slogan">Advancing to new horizons</h1>
+  <header class="show-web-only">
+    <h1>Briceson Roy</h1>
+    <h2 class="slogan">Advancing to new horizons</h2>
   </header>
 
   <main class="staging-area">
     <section class="profile">
       <div class="wrapper">
         <h2><img class="photograph" src="images/profile-pic.jpg" alt="Profile pic">Welcome!</h2>
-        <p>I am a full stack web developer and artist who excels at creating logos and labels designed for music. 
+        <p id="introduction">I am a full stack web developer and artist who excels at creating logos and labels designed
+          for music.
           <br>
           <br>
-          I enjoy coding because it's like a puzzle game. When presented with a particularly challenging code, I can sit at a
+          I enjoy coding because it's like a puzzle game. When presented with a particularly challenging code, I can sit
+          at a
           computer for hours until I solve the puzzle, especially when working with others.
           <br>
           <br>
-          When not coding I enjoy gaming and the more challenging the game the better. Even with all I have learned so far I still
+          When not coding I enjoy gaming and the more challenging the game the better. Even with all I have learned so
+          far I still
           seek to advance to the next level.
         </p>
       </div>
@@ -85,48 +127,49 @@
       </div>
     </section>
 
-    <section class="projects"> 
+    <section class="projects">
       <h2>Projects</h2>
       <div class="wrapper">
         <ul class="project-list">
-        <li class="preview-box">
-          <img src="images/app-screenshot.png" alt="preview of project">
-          <div class="project-info">
-            <h3>World War Quiz Command</h3>
-            <ul class="skills-used">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>jQuery</li>
-            </ul>
-            <p>
-              Envision yourself as a commander of your own squadron during D-Day. Use you knowledge to
-              lead your squadron to victory with my latest project: World War Quiz Command.</p>
-            <div class="button wrapper">
-              <a href="https://github.com/RoyZone96/ww-2-quiz-command" target="_blank">CODE</a>
-              <a href="https://royzone96.github.io/ww-2-quiz-command/" target="_blank">DEMO</a>
+          <li class="preview-box">
+            <img src="images/app-screenshot.png" alt="preview of project">
+            <div class="project-info">
+              <h3>World War Quiz Command</h3>
+              <ul class="skills-used">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+              </ul>
+              <p>
+                Envision yourself as a commander of your own squadron during D-Day. Use you knowledge to
+                lead your squadron to victory with my latest project: World War Quiz Command.
+              </p>
+              <div class="button wrapper">
+                <a href="https://github.com/RoyZone96/ww-2-quiz-command" target="_blank">CODE</a>
+                <a href="https://royzone96.github.io/ww-2-quiz-command/" target="_blank">DEMO</a>
+              </div>
             </div>
-          </div>
-        </li>
-        <li class="preview-box">
-          <img src="images/index-screenshot.png" alt="preview of project">
-          <div class="project-info">
-            <h3>DnD Living Library</h3>
-            <ul class="skills-used">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>jQuery</li>
-            </ul>
-            <p>
-              A whole library's worth of tabletop knowledge in the palm of your hand and counting.
-            </p>
-            <div class="button wrapper">
-              <a href="https://github.com/RoyZone96/dnd-library" target="_blank">CODE</a>
-              <a href="https://royzone96.github.io/dnd-library/" target="_blank">DEMO</a>
+          </li>
+          <li class="preview-box">
+            <img src="images/index-screenshot.png" alt="preview of project">
+            <div class="project-info">
+              <h3>DnD Living Library</h3>
+              <ul class="skills-used">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+              </ul>
+              <p>
+                A whole library's worth of tabletop knowledge in the palm of your hand and counting.
+              </p>
+              <div class="button wrapper">
+                <a href="https://github.com/RoyZone96/dnd-library" target="_blank">CODE</a>
+                <a href="https://royzone96.github.io/dnd-library/" target="_blank">DEMO</a>
+              </div>
             </div>
-          </div>
-        </li>
+          </li>
       </div>
 
     </section>
@@ -148,11 +191,20 @@
     </section>
   </main>
   <footer class="copyright">
-    <span>2020 Briceson Roy</span>
+    <span>© 2020 Briceson Roy</span>
   </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
   <script src="linkscript.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SCE656RQYP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-SCE656RQYP');
+  </script>
 </body>
 
 
