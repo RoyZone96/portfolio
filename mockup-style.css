@@ -1,5 +1,16 @@
+/*
+The CSS code gets to executed from top to bottom and left ro right
+Basic rules to write CSS
+- write GENERAL rules first (for all the paragraph tags in the website for example) and only after that write CSS for SPECIFIC tags (for example the paragraph tags inside the footer)
+- write the css styles to define for the parent (outside) container and THEN the children (inside containers) of that parent and THEN the children (inside containers) of the child above
+*/
+
+/* -------------------------------------
+CSS reset
+Is a short set of CSS rules that resets the styling of all HTML elements to a consistent baseline so the website will look the same on all browsers
+*/
+
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: 0;
@@ -44,25 +55,36 @@
   -o-padding-end: 0px;
 }
 
+/* -------------------------------------
+General styles (General Module, wrapping around the modules below)
+(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules below (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Courier New', Courier, monospace;
+  color: black
 }
 
 .show-print-only {
   display: none !important;
 }
 
-
-
-.name{
-  float: left;
+@font-face {
+  font-family: LittleLordFontleroy;
+  src: url(LittleLordFontleroyNF.ttf);
 }
 
-ul{
+.name {
+  float: left;
+  font-family: LittleLordFontleroy;
+  font-size: 49pt;
+}
+
+ul {
   list-style: none;
 }
 
@@ -74,7 +96,7 @@ nav {
   display: inline-block
 }
 
-.fa{
+.fa {
   font-size: 24pt;
 }
 
@@ -86,16 +108,17 @@ nav {
   cursor: pointer;
 }
 
-.full{display: none;}
+.full {
+  display: inline;
+}
 
 .screen {
-  float:right;
+  float: right;
   list-style: none;
   margin-top: 20px;
 }
 
 .navlist li {
-  
   width: auto;
   padding: 5px 10px;
   cursor: pointer;
@@ -105,7 +128,7 @@ nav {
   display: inline;
 }
 
-.navlist :hover{
+.navlist :hover {
   color: white
 }
 
@@ -128,15 +151,6 @@ header {
 
 header h1 {
   position: absolute;
-  top: 25%;
-  left: 1%;
-  color: white;
-  text-align: left;
-  font-size: 15px;
-}
-
-header h2 {
-  position: absolute;
   bottom: 1%;
   right: 1%;
   color: white;
@@ -149,21 +163,30 @@ header h2 {
   font-family: 'Brush Script MT', cursive;
 }
 
+.logo {
+  display: inline;
+  width: 90px;
+  margin: 6px 0;
+  float: left;
+}
+
+/* -------------------------------------
+Content styles (Main Module)
+(all the styles inside the < sections > or < aside > tags)
+*/
+
 main {
   display: block;
   text-align: center;
 }
 
-.logo {
-  display: inline;
-  width: 90px;
-  margin: 6px 0;
-  float: right;
-}
-
-
-.logo img {
+section {
+  background-color: ghostwhite;
+  display: block;
+  min-height: 119px;
   width: 100%;
+  padding: 6px 0;
+  border-spacing: 20px;
 }
 
 .wrapper {
@@ -172,15 +195,14 @@ main {
   margin-right: auto;
   padding-top: 30px;
   padding-bottom: 30px;
-  
 }
 
 .profile {
-  background-color: gainsboro;
-  color: brown
+  background-color: rgb(94, 94, 94);
+  color: goldenrod
 }
 
-#introduction{
+#introduction {
   text-align: left;
 }
 
@@ -190,7 +212,7 @@ main {
   margin: 20px auto;
 }
 
-.skills-list{
+.skills-list {
   width: 100%;
   padding: 1rem;
   text-align: center;
@@ -217,12 +239,18 @@ main {
   text-align: left;
 }
 
-.preview-box{
+section.projects li.preview-box {
+  margin-bottom: 5%;
+  margin-top: 2%;
+  border-bottom: 1px solid #ccc;
+}
+
+/* .preview-box{
   padding-top: 50px;
   padding-bottom: 50px;
   border: 1pt solid;
   margin-bottom: 25px
-}
+} */
 
 .preview-box img {
   width: 70%;
@@ -231,8 +259,19 @@ main {
   margin-right: auto;
 }
 
-.project-info {
+/* .project-info {
   width: 100%;
+} */
+
+.project-info {
+  display: inline-block;
+  width: 48%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-bottom: 1rem;
+  vertical-align: top;
+  padding-top: 100px;
+  padding-left: 20px;
 }
 
 .skills-used li {
@@ -269,7 +308,7 @@ main {
   list-style: none;
 }
 
-.link-list :hover{
+.link-list :hover {
   color: white
 }
 
@@ -297,20 +336,6 @@ ul.socials {
 }
 
 /* -------------------------------------
-Content styles (Main Module)
-(all the styles inside the < sections > or < aside > tags)
-*/
-
-section {
-  background-color: ghostwhite;
-  display: block;
-  min-height: 119px;
-  width: 100%;
-  padding: 6px 0;
-  border-spacing: 20px;
-}
-
-/* -------------------------------------
 Footer styles (Main Module)
 (all the styles inside the < footer > tag)
 */
@@ -326,10 +351,117 @@ footer {
   text-align: center
 }
 
-@media only screen and (min-width: 768px) {
+/* -------------------------------------
+place all the desktop styles above this line
+Responsive styles
+(the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+place all the mobile tables styles below this line
+*/
+
+/*large desktop*/
+
+@media only screen and (max-width: 1600px) {
+  /* -------------------------------------
+General styles (General Module, wrapping around the modules below)
+(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules below (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+  body {
+    border: 3px solid yellow;
+  }
+  /* -------------------------------------
+Header styles (Main Module)
+(all the styles inside the < header > or < nav > tags)
+*/
+}
+
+/* -------------------------------------
+Content styles (Main Module)
+(all the styles inside the < sections > or < aside > tags)
+*/
+
+/*iPad lanscape / small laptop*/
+
+@media only screen and (max-width: 1024px) {
+  /* -------------------------------------
+General styles (General Module, wrapping around the modules below)
+(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules below (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+  body {
+    border: 3px solid blue;
+  }
+  /* -------------------------------------
+Header styles (Main Module)
+(all the styles inside the < header > or < nav > tags)
+*/
+
+/* -------------------------------------
+Content styles (Main Module)
+(all the styles inside the < sections > or < aside > tags)
+*/
+}
+
+/*iPad potrait*/
+
+@media only screen and (max-width: 768px) {
+  /* -------------------------------------
+General styles (General Module, wrapping around the modules below)
+(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules below (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+  body {
+    border: 3px solid red;
+  }
+  /* -------------------------------------
+Header styles (Main Module)
+(all the styles inside the < header > or < nav > tags)
+*/
   .menu-bar {
     display: none;
   }
+
+  .nav {
+    width: 100%;
+    background-color: goldenrod;
+    position: fixed;
+    z-index: 1;
+    display: inline-block;
+  }
+
+  .navlist {
+    display: inline-block;
+    list-style: none;
+    margin-top: 20px;
+  }
+
+  .screen {
+    display: block;
+  }
+
+  .navlist li {
+    display: inline-block;
+    width: auto;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: navy;
+    font-size: 22px;
+    font-weight: bolder;
+  }
+
+  .navlist li:last-child {
+    margin-right: 45px;
+  }
+
+  .navlist li a:visited {
+    color: navy;
+  }
+
+  .slogan {
+    font-size: 39pt;
+  }
+
+/* -------------------------------------
+Content styles (Main Module)
+(all the styles inside the < sections > or < aside > tags)
+*/
 
   section {
     background-color: ghostwhite;
@@ -342,45 +474,8 @@ footer {
     float: right;
     margin-left: 40px;
   }
-
-  .full{
-    display: inline-block;
-  }
-
-  .slogan {
-    font-size: 39pt;
-  }
-
-  .nav {
-    width: 100%;
-    background-color: goldenrod;
-    position: fixed;
-    z-index: 1;
-    display: inline-block;
-  }
-  .navlist {
-    display: inline-block;
-    list-style: none;
-    margin-top: 20px;
-  }
-  .screen {
-    display: block;
-  }
-  .navlist li {
-    display: inline-block;
-    width: auto;
-    padding: 5px 10px;
-    cursor: pointer;
-    color: navy;
-    font-size: 22px;
-    font-weight: bolder;
-  }
-  .navlist li:last-child {
-    margin-right: 45px;
-  }
-  .navlist li a:visited {
-    color: navy;
-  }
+  
+  
   .preview-box img {
     width: 50%;
     padding-left: 30px;
@@ -393,4 +488,100 @@ footer {
     font-size: 100px;
     color: navy;
   }
+}
+
+/*Android landscape*/
+
+@media only screen and (max-width: 640px) {
+  /* -------------------------------------
+General styles (General Module, wrapping around the modules below)
+(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules below (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+  body {
+    border: 3px solid pink;
+  }
+}
+
+/* -------------------------------------
+Header styles (Main Module)
+(all the styles inside the < header > or < nav > tags)
+*/
+
+.full {
+  display: none;
+}
+
+/* -------------------------------------
+Content styles (Main Module)
+(all the styles inside the < sections > or < aside > tags)
+*/
+.preview-box img {
+  width: 75%;
+  padding-left: 30px;
+  padding-bottom: 0px;
+}
+
+/*iPhone landscape*/
+
+@media only screen and (max-width: 480px) {
+  /* -------------------------------------
+General styles (General Module, wrapping around the modules below)
+(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules below (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+  body {
+    border: 3px solid green;
+  }
+
+/* -------------------------------------
+Header styles (Main Module)
+(all the styles inside the < header > or < nav > tags)
+*/
+
+/* -------------------------------------
+Content styles (Main Module)
+(all the styles inside the < sections > or < aside > tags)
+*/
+}
+/*iPhone portrait*/
+
+@media only screen and (max-width: 320px) {
+  /* -------------------------------------
+General styles (General Module, wrapping around the modules below)
+(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules below (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+  body {
+    border: 3px solid purple;
+  }
+
+  .wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  /* -------------------------------------
+Header styles (Main Module)
+(all the styles inside the < header > or < nav > tags)
+*/
+  .name {
+    font-size: 24pt;
+  }
+ 
+
+  .screen{
+    margin-top: 10px;
+  }
+
+  .navlist .fa{
+    font-size: 7pt;
+  }
+
+  /* -------------------------------------
+Content styles (Main Module)
+(all the styles inside the < sections > or < aside > tags)
+*/
+
+
+
 }
