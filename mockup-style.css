@@ -4,6 +4,44 @@
   padding: 0;
   border: 0;
   font-size: 100%;
+  /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+  box-sizing: border-box;
+  /*reset Chrome user agent styles*/
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-before: 0px;
+  -webkit-padding-after: 0px;
+  -webkit-padding-start: 0px;
+  -webkit-padding-end: 0px;
+  /*reset Firefox user agent styles*/
+  -moz-margin-before: 0px;
+  -moz-margin-after: 0px;
+  -moz-margin-start: 0px;
+  -moz-margin-end: 0px;
+  -moz-padding-before: 0px;
+  -moz-padding-after: 0px;
+  -moz-padding-start: 0px;
+  -moz-padding-end: 0px;
+  /*reset Internet Explorer user agent styles*/
+  -ms-margin-before: 0px;
+  -ms-margin-after: 0px;
+  -ms-margin-start: 0px;
+  -ms-margin-end: 0px;
+  -ms-padding-before: 0px;
+  -ms-padding-after: 0px;
+  -ms-padding-start: 0px;
+  -ms-padding-end: 0px;
+  /*reset Opera user agent styles*/
+  -o-margin-before: 0px;
+  -o-margin-after: 0px;
+  -o-margin-start: 0px;
+  -o-margin-end: 0px;
+  -o-padding-before: 0px;
+  -o-padding-after: 0px;
+  -o-padding-start: 0px;
+  -o-padding-end: 0px;
 }
 
 html {
@@ -18,11 +56,7 @@ body {
   display: none !important;
 }
 
-.logo {
-  display: inline-block;
-  width: 40px;
-  margin: 6px 0;
-}
+
 
 .name{
   float: left;
@@ -55,11 +89,13 @@ nav {
 .full{display: none;}
 
 .screen {
+  float:right;
   list-style: none;
   margin-top: 20px;
 }
 
 .navlist li {
+  
   width: auto;
   padding: 5px 10px;
   cursor: pointer;
@@ -76,6 +112,11 @@ nav {
 .navlist li a:visited {
   color: navy;
 }
+
+/* -------------------------------------
+Header styles (Main Module)
+(all the styles inside the < header > or < nav > tags)
+*/
 
 header {
   background: rgba(0, 0, 0, 0) url("images/landscape.jpg") no-repeat bottom center;
@@ -120,9 +161,6 @@ main {
   float: right;
 }
 
-.logo h1{
-  font-family: cursive;
-}
 
 .logo img {
   width: 100%;
@@ -152,9 +190,19 @@ main {
   margin: 20px auto;
 }
 
+.skills-list{
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  display: grid;
+  flex-flow: column wrap;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
 .skills-list img {
-  width: 20%;
-  height: 10%;
+  width: 70%;
+  height: 70%;
 }
 
 .projects {
@@ -248,6 +296,11 @@ ul.socials {
   justify-content: space-evenly;
 }
 
+/* -------------------------------------
+Content styles (Main Module)
+(all the styles inside the < sections > or < aside > tags)
+*/
+
 section {
   background-color: ghostwhite;
   display: block;
@@ -256,6 +309,11 @@ section {
   padding: 6px 0;
   border-spacing: 20px;
 }
+
+/* -------------------------------------
+Footer styles (Main Module)
+(all the styles inside the < footer > tag)
+*/
 
 footer {
   display: inline-block;
