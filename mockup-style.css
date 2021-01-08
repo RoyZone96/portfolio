@@ -64,6 +64,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 body {
   font-family: 'Courier New', Courier, monospace;
   color: black
@@ -96,6 +97,10 @@ nav {
   display: inline-block
 }
 
+.full{
+  font-family: 'Courier New', Courier, monospace;
+}
+
 .fa {
   font-size: 24pt;
 }
@@ -108,9 +113,6 @@ nav {
   cursor: pointer;
 }
 
-.full {
-  display: inline;
-}
 
 .screen {
   float: right;
@@ -189,6 +191,17 @@ section {
   border-spacing: 20px;
 }
 
+.section-intro{
+  padding-left: 95px;
+  text-align: left;
+  border-bottom: 1.5pt solid goldenrod ;
+}
+
+.section-intro .fa{
+  font-size: 24pt;
+  padding-right: 10px ;
+}
+
 .wrapper {
   width: 80%;
   margin-left: auto;
@@ -204,6 +217,10 @@ section {
 
 #introduction {
   text-align: left;
+}
+
+h2 .fa{
+  font-size: 24pt; 
 }
 
 .photograph {
@@ -281,10 +298,12 @@ section.projects li.preview-box {
   margin: 5px;
   list-style: none;
   background-color: navy;
+  border-radius: 25%;
 }
 
 .project-info a {
   color: orange;
+  border-radius: 25%;
   text-decoration: none;
   display: inline-block;
   background-color: navy;
@@ -418,6 +437,8 @@ Header styles (Main Module)
     display: none;
   }
 
+ 
+
   .nav {
     width: 100%;
     background-color: goldenrod;
@@ -444,6 +465,10 @@ Header styles (Main Module)
     color: navy;
     font-size: 22px;
     font-weight: bolder;
+  }
+
+  .navlist li .full{
+    display: none;
   }
 
   .navlist li:last-child {
@@ -507,18 +532,29 @@ Header styles (Main Module)
 (all the styles inside the < header > or < nav > tags)
 */
 
-.full {
-  display: none;
-}
+
+
+
 
 /* -------------------------------------
 Content styles (Main Module)
 (all the styles inside the < sections > or < aside > tags)
 */
 .preview-box img {
-  width: 75%;
+  width: 50%;
   padding-left: 30px;
   padding-bottom: 0px;
+}
+
+.project-info {
+  display: inline-block;
+  width: 48%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-bottom: 1rem;
+  vertical-align: top;
+  padding-top: 100px;
+  padding-left: 20px;
 }
 
 /*iPhone landscape*/
@@ -573,6 +609,10 @@ Header styles (Main Module)
     margin-top: 10px;
   }
 
+  .full {
+    display: none;
+  }
+
   .navlist .fa{
     font-size: 7pt;
   }
@@ -582,6 +622,22 @@ Content styles (Main Module)
 (all the styles inside the < sections > or < aside > tags)
 */
 
+.preview-box img {
+  width: 30%;
+  padding-left: 30px;
+  padding-bottom: 0px;
+}
+
+.project-info {
+  display: inline-block;
+  width: 48%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-bottom: 1rem;
+  vertical-align: top;
+  padding-top: 100px;
+  padding-left: 20px;
+}
 
 
 }
