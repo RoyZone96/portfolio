@@ -6,67 +6,80 @@
       }
       */
     body {
-      width: 1200px !important;
-      color: black
+        width: 1200px !important;
+        color: black
     }
     div[class|="col-"] {
-      float: left !important;
+        float: left !important;
     }
     a[href]:after {
-      content: "" !important;
+        content: "" !important;
     }
     .show-web-only {
-      display: none !important;
+        display: none !important;
     }
     .show-print-only {
-      display: block !important;
+        display: block !important;
     }
-  
+    nav {
+        position: relative;
+    }
+    main {
+        margin-top: 70px;
+    }
     section {
-      width: 70%;
-      margin: 15px auto;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      border-bottom: 0px;
+        width: 70%;
+        margin: 15px auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 0px;
     }
-  
+    .preview-box img {
+        width: 50%;
+        padding-left: 30px;
+        padding-bottom: 0px;
+    }
+    .project-info {
+        display: inline-block !important;
+        width: 48%;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        margin-bottom: 1rem;
+        vertical-align: top;
+        padding-top: 100px;
+        padding-left: 20px;
+    }
     header {
-      background-image: none;
-      height: auto;
+        background-image: none;
+        height: auto;
+        padding-bottom: 50px;
     }
     header h1 {
-      display: none;
+        display: none;
     }
-  
     header nav {
-      position: relative;
-      width: 70%;
-      margin: 30px auto;
+        position: relative;
+        width: 70%;
+        margin: 30px auto;
     }
-  
     header nav div.logo {
-      padding: 0px;
-      font-size: 255%;
+        padding: 0px;
+        font-size: 255%;
     }
-  
     header nav ul.nav-items li {
-      padding: 0px;
-      border-right: 0px;
+        padding: 0px;
+        border-right: 0px;
     }
-  
     .skills {
-      page-break-after: always;
+        page-break-after: always;
     }
-  
     section.contact {
-      display: none;
-  }
-  
+        display: none;
+    }
     footer {
-      display: none;
+        display: none;
     }
-  
     footer a i.far {
-      display: none;
+        display: none;
     }
-  }
+}

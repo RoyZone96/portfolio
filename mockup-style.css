@@ -64,10 +64,16 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
-  font-family: 'Courier New', Courier, monospace;
-  color: black
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 16px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .show-print-only {
@@ -82,7 +88,9 @@ body {
 .name {
   float: left;
   font-family: LittleLordFontleroy;
-  font-size: 49pt;
+  font-size: 30px;
+  margin-left: 10px;
+  margin-top: 13px;
 }
 
 ul {
@@ -94,15 +102,14 @@ nav {
   background-color: goldenrod;
   position: fixed;
   z-index: 1;
-  display: inline-block
-}
-
-.full{
-  font-family: 'Courier New', Courier, monospace;
+  top: 0;
+  left: 0;
+  display: block;
+  /* text-align: center; */
 }
 
 .fa {
-  font-size: 24pt;
+  font-size: 24px;
 }
 
 .menu-bar {
@@ -112,7 +119,6 @@ nav {
   margin: 6px 0;
   cursor: pointer;
 }
-
 
 .screen {
   float: right;
@@ -125,7 +131,7 @@ nav {
   padding: 5px 10px;
   cursor: pointer;
   color: navy;
-  font-size: 18pt;
+  font-size: 18px;
   font-weight: bolder;
   display: inline;
 }
@@ -161,7 +167,7 @@ header h1 {
 }
 
 .slogan {
-  font-size: 18pt;
+  font-size: 18px;
   font-family: 'Brush Script MT', cursive;
 }
 
@@ -191,15 +197,15 @@ section {
   border-spacing: 20px;
 }
 
-.section-intro{
+.section-intro {
   padding-left: 95px;
   text-align: left;
-  border-bottom: 1.5pt solid goldenrod ;
+  border-bottom: 1.5pt solid goldenrod;
 }
 
-.section-intro .fa{
-  font-size: 24pt;
-  padding-right: 10px ;
+.section-intro .fa {
+  font-size: 24px;
+  padding-right: 10px;
 }
 
 .wrapper {
@@ -219,8 +225,8 @@ section {
   text-align: left;
 }
 
-h2 .fa{
-  font-size: 24pt; 
+h2 .fa {
+  font-size: 24px;
 }
 
 .photograph {
@@ -311,9 +317,8 @@ section.projects li.preview-box {
   padding: 5px 10px
 }
 
-.contact-form {
-  background-color: gainsboro;
-  color: navy;
+.project-info a:hover {
+  color: white;
 }
 
 .container {
@@ -335,7 +340,7 @@ section.projects li.preview-box {
   display: inline-block;
   width: auto;
   padding: 10px 35px;
-  font-size: 12pt;
+  font-size: 12px;
   color: navy;
 }
 
@@ -412,11 +417,21 @@ General styles (General Module, wrapping around the modules below)
 Header styles (Main Module)
 (all the styles inside the < header > or < nav > tags)
 */
-
-/* -------------------------------------
+  /* -------------------------------------
 Content styles (Main Module)
 (all the styles inside the < sections > or < aside > tags)
 */
+}
+
+.project-info {
+  display: inline-block;
+  width: 48%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-bottom: 1rem;
+  vertical-align: top;
+  padding-top: 50px;
+  padding-left: 20px;
 }
 
 /*iPad potrait*/
@@ -436,9 +451,9 @@ Header styles (Main Module)
   .menu-bar {
     display: none;
   }
-
- 
-
+  .screen {
+    margin-top: 0;
+  }
   .nav {
     width: 100%;
     background-color: goldenrod;
@@ -446,17 +461,14 @@ Header styles (Main Module)
     z-index: 1;
     display: inline-block;
   }
-
   .navlist {
     display: inline-block;
     list-style: none;
     margin-top: 20px;
   }
-
   .screen {
     display: block;
   }
-
   .navlist li {
     display: inline-block;
     width: auto;
@@ -466,28 +478,25 @@ Header styles (Main Module)
     font-size: 22px;
     font-weight: bolder;
   }
-
-  .navlist li .full{
+  .navlist li .full {
+    font-size: 10px;
+  }
+  .navlist li .full span {
     display: none;
   }
-
   .navlist li:last-child {
     margin-right: 45px;
   }
-
   .navlist li a:visited {
     color: navy;
   }
-
   .slogan {
-    font-size: 39pt;
+    font-size: 39px;
   }
-
-/* -------------------------------------
+  /* -------------------------------------
 Content styles (Main Module)
 (all the styles inside the < sections > or < aside > tags)
 */
-
   section {
     background-color: ghostwhite;
     display: block;
@@ -499,8 +508,6 @@ Content styles (Main Module)
     float: right;
     margin-left: 40px;
   }
-  
-  
   .preview-box img {
     width: 50%;
     padding-left: 30px;
@@ -532,14 +539,11 @@ Header styles (Main Module)
 (all the styles inside the < header > or < nav > tags)
 */
 
-
-
-
-
 /* -------------------------------------
 Content styles (Main Module)
 (all the styles inside the < sections > or < aside > tags)
 */
+
 .preview-box img {
   width: 50%;
   padding-left: 30px;
@@ -553,7 +557,7 @@ Content styles (Main Module)
   margin-right: 0.5%;
   margin-bottom: 1rem;
   vertical-align: top;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-left: 20px;
 }
 
@@ -567,17 +571,24 @@ General styles (General Module, wrapping around the modules below)
   body {
     border: 3px solid green;
   }
-
-/* -------------------------------------
+  /* -------------------------------------
 Header styles (Main Module)
 (all the styles inside the < header > or < nav > tags)
 */
-
-/* -------------------------------------
+  /* -------------------------------------
 Content styles (Main Module)
 (all the styles inside the < sections > or < aside > tags)
 */
+  .button-wrapper {
+    width: 150px;
+  }
+
+  .skills-used{
+    width: 250px;
+    display: inline;
+  }
 }
+
 /*iPhone portrait*/
 
 @media only screen and (max-width: 320px) {
@@ -588,7 +599,6 @@ General styles (General Module, wrapping around the modules below)
   body {
     border: 3px solid purple;
   }
-
   .wrapper {
     width: 80%;
     margin-left: auto;
@@ -596,48 +606,39 @@ General styles (General Module, wrapping around the modules below)
     padding-top: 30px;
     padding-bottom: 30px;
   }
+  .button-wrapper {
+    width: 150px;
+  }
   /* -------------------------------------
 Header styles (Main Module)
 (all the styles inside the < header > or < nav > tags)
 */
   .name {
-    font-size: 24pt;
+    font-size: 24px;
   }
- 
-
-  .screen{
+  .screen {
     margin-top: 10px;
   }
-
-  .full {
-    display: none;
-  }
-
-  .navlist .fa{
-    font-size: 7pt;
-  }
-
+  /* .navlist .fa{
+    font-size: 7px;
+  } */
   /* -------------------------------------
 Content styles (Main Module)
 (all the styles inside the < sections > or < aside > tags)
 */
-
-.preview-box img {
-  width: 30%;
-  padding-left: 30px;
-  padding-bottom: 0px;
-}
-
-.project-info {
-  display: inline-block;
-  width: 48%;
-  margin-left: 0.5%;
-  margin-right: 0.5%;
-  margin-bottom: 1rem;
-  vertical-align: top;
-  padding-top: 100px;
-  padding-left: 20px;
-}
-
-
+  .preview-box img {
+    width: 30%;
+    padding-left: 30px;
+    padding-bottom: 0px;
+  }
+  .project-info {
+    display: inline-block;
+    width: 48%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-bottom: 1rem;
+    vertical-align: top;
+    padding-top: 100px;
+    padding-left: 20px;
+  }
 }
