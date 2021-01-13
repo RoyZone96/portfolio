@@ -168,7 +168,7 @@ header h1 {
 
 .slogan {
   font-size: 18px;
-  font-family: 'Brush Script MT', cursive;
+  
 }
 
 .logo {
@@ -193,14 +193,15 @@ section {
   display: block;
   min-height: 119px;
   width: 100%;
-  padding: 6px 0;
+  padding: 70px 0;
   border-spacing: 20px;
 }
 
 .section-intro {
   padding-left: 95px;
   text-align: left;
-  border-bottom: 1.5pt solid goldenrod;
+  padding-bottom: 15px;
+  border-bottom: 1px solid goldenrod;
 }
 
 .section-intro .fa {
@@ -297,28 +298,38 @@ section.projects li.preview-box {
   padding-left: 20px;
 }
 
+.skills-used{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 .skills-used li {
   display: inline-block;
   width: auto;
-  padding: 2px 5px;
+  padding: 5px 10px;
   margin: 5px;
   list-style: none;
-  background-color: navy;
-  border-radius: 25%;
+  border: 1px solid navy;
+  border-radius: 5px;
 }
 
 .project-info a {
   color: orange;
-  border-radius: 25%;
+  border-radius: 5px;
   text-decoration: none;
   display: inline-block;
   background-color: navy;
   border: 20px;
-  padding: 5px 10px
+  padding: 10px 15px
 }
 
 .project-info a:hover {
   color: white;
+}
+
+.button-wrapper{
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .container {
@@ -366,13 +377,15 @@ Footer styles (Main Module)
 
 footer {
   display: inline-block;
-  background-color: black;
-  color: yellow;
+  background-color:  rgb(94, 94, 94);
+  color: gold;
   width: 100%;
   position: relative;
   bottom: 0;
   right: 0;
-  text-align: center
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 /* -------------------------------------
@@ -575,17 +588,36 @@ General styles (General Module, wrapping around the modules below)
 Header styles (Main Module)
 (all the styles inside the < header > or < nav > tags)
 */
+
+.navlist{
+  margin-top: 0;
+  }
+
+  .screen{
+    float: left;
+  }
+
   /* -------------------------------------
 Content styles (Main Module)
 (all the styles inside the < sections > or < aside > tags)
 */
-  .button-wrapper {
-    width: 150px;
+
+  .preview-box img{
+    padding-left: 0;
+    width: 80%;
+  }
+ 
+  .project-info{
+    width: 250px;
   }
 
   .skills-used{
-    width: 250px;
-    display: inline;
+    display: flex;
+    align-items: center;
+  }
+
+  .description{
+    padding-bottom: 15px;
   }
 }
 

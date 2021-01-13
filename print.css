@@ -7,7 +7,7 @@
       */
     body {
         width: 1200px !important;
-        color: black
+        color: black !important
     }
     div[class|="col-"] {
         float: left !important;
