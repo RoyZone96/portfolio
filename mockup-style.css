@@ -219,11 +219,19 @@ section {
 
 .profile {
   background-color: rgb(94, 94, 94);
-  color: goldenrod
+  color: goldenrod;
+  display: inline-block;
 }
 
 #introduction {
   text-align: left;
+  display: inline-block;
+  width: 48%;
+  margin-right: 0.5%;
+  margin-bottom: 1rem;
+  vertical-align: top;
+  padding-top: 100px;
+  
 }
 
 h2 .fa {
@@ -231,9 +239,10 @@ h2 .fa {
 }
 
 .photograph {
-  float: none;
-  display: block;
-  margin: 20px auto;
+  width: 28%;
+  padding-bottom: 10px;
+  margin-right: 20px;
+  float: right
 }
 
 .skills-list {
@@ -518,6 +527,7 @@ Content styles (Main Module)
     border-spacing: 20px;
   }
   .photograph {
+    width: 20%;
     float: right;
     margin-left: 40px;
   }
@@ -556,6 +566,12 @@ Header styles (Main Module)
 Content styles (Main Module)
 (all the styles inside the < sections > or < aside > tags)
 */
+
+.photograph {
+  width: 16%;
+  float: right;
+  margin-left: 40px;
+}
 
 .preview-box img {
   width: 50%;
