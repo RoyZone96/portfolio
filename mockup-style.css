@@ -413,9 +413,7 @@ place all the mobile tables styles below this line
 General styles (General Module, wrapping around the modules below)
 (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules below (h2, h3, h4, h5, h6, p, a, ul, li))
 */
-  body {
-    border: 3px solid yellow;
-  }
+
   /* -------------------------------------
 Header styles (Main Module)
 (all the styles inside the < header > or < nav > tags)
@@ -434,9 +432,7 @@ Content styles (Main Module)
 General styles (General Module, wrapping around the modules below)
 (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules below (h2, h3, h4, h5, h6, p, a, ul, li))
 */
-  body {
-    border: 3px solid blue;
-  }
+ 
   /* -------------------------------------
 Header styles (Main Module)
 (all the styles inside the < header > or < nav > tags)
@@ -465,9 +461,7 @@ Content styles (Main Module)
 General styles (General Module, wrapping around the modules below)
 (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules below (h2, h3, h4, h5, h6, p, a, ul, li))
 */
-  body {
-    border: 3px solid red;
-  }
+ 
   /* -------------------------------------
 Header styles (Main Module)
 (all the styles inside the < header > or < nav > tags)
@@ -554,9 +548,7 @@ Content styles (Main Module)
 General styles (General Module, wrapping around the modules below)
 (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules below (h2, h3, h4, h5, h6, p, a, ul, li))
 */
-  body {
-    border: 3px solid pink;
-  }
+ 
 }
 
 /* -------------------------------------
@@ -599,9 +591,7 @@ Content styles (Main Module)
 General styles (General Module, wrapping around the modules below)
 (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules below (h2, h3, h4, h5, h6, p, a, ul, li))
 */
-  body {
-    border: 3px solid green;
-  }
+ 
   /* -------------------------------------
 Header styles (Main Module)
 (all the styles inside the < header > or < nav > tags)
@@ -646,9 +636,7 @@ Content styles (Main Module)
 General styles (General Module, wrapping around the modules below)
 (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules below (h2, h3, h4, h5, h6, p, a, ul, li))
 */
-  body {
-    border: 3px solid purple;
-  }
+ 
   .wrapper {
     width: 80%;
     margin-left: auto;
