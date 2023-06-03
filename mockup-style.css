@@ -140,10 +140,6 @@ nav {
   color: white
 }
 
-.navlist li a:visited {
-  color: navy;
-}
-
 /* -------------------------------------
 Header styles (Main Module)
 (all the styles inside the < header > or < nav > tags)
@@ -388,7 +384,7 @@ Footer styles (Main Module)
 
 footer {
   display: inline-block;
-  background-color:  rgb(94, 94, 94);
+  background-color:  green;
   color: gold;
   width: 100%;
   position: relative;
